@@ -10,10 +10,12 @@ const useFetch = (url) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(url);
-        setData(res.data);
+        const res = await axios.get(`https://hybrid-apis.vercel.app/api${url}`);
+        //setData(res.data);
+        if (res.data) setData(res.data);
       } catch (err) {
         setError(err);
+        console.log(err?.response);
       }
       setLoading(false);
     };
@@ -23,10 +25,12 @@ const useFetch = (url) => {
   const reFetch = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(url);
-      setData(res.data);
+      const res = await axios.get(`https://hybrid-apis.vercel.app/api${url}`);
+      //setData(res.data);
+      if (res.data) setData(res.data);
     } catch (err) {
       setError(err);
+      console.log(err?.response);
     }
     setLoading(false);
   };
