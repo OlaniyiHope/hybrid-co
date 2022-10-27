@@ -1,5 +1,4 @@
 {
-  "proxy": "https://hybrid-apis.vercel.app/api",
   "name": "booking",
   "version": "0.1.0",
   "private": true,
@@ -49,5 +48,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:8800/api"
 }
