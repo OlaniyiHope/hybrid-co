@@ -35,7 +35,7 @@ const Login = () => {
 
   return (
     <>
-      <h3 className="log">Login to Hybrid Homes</h3>
+      <h3 className="log">Login to Hybrid Home</h3>
       <div className="login">
         <div className="lContainer">
           <input
