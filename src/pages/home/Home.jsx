@@ -14,7 +14,7 @@ import MailList2 from "../../components/mailList2/MailList2";
 
 const Home = ({ type }) => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#F6F7FB" }}>
       <Navbar />
       <Page_header headertitle="home" className="ona" />
 
