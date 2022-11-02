@@ -20,13 +20,13 @@
 .featuredImg {
   width: 100%;
   height: 100%;
-  background-image: url("../../../public/assets/img/hi.jpg");
+  background-image: url("../../../public/assets/img/yo.jpeg");
   object-fit: cover;
 }
 .featuredImg2 {
   width: 100%;
   height: 100%;
-  background-image: url("../../../public/assets/img/62.jpeg");
+  background-image: url("../../../public/assets/img/ooo.jpeg");
   object-fit: cover;
 }
 .featuredImg3 {
@@ -39,6 +39,14 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+}
+.featuredTitles h2 {
+  color: white;
+  font-weight: 700;
+}
+.featuredTitles h1 {
+  color: white;
+  font-weight: 700;
 }
 .bet {
   font-size: 30px;
