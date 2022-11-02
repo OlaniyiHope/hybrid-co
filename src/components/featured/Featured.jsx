@@ -14,7 +14,7 @@ const Featured = () => {
       <div className="featured">
         <>
           <div className="featuredItem">
-            <img src="" alt="" className="featuredImg " />
+            <img className="featuredImg " />
             <div className="featuredTitles">
               <h1>Banana Island</h1>
               <h2> properties</h2>
@@ -22,14 +22,14 @@ const Featured = () => {
           </div>
 
           <div className="featuredItem">
-            <img src="" alt="" className="featuredImg2" />
+            <img className="featuredImg2" />
             <div className="featuredTitles">
               <h1>Lekki</h1>
               <h2>properties</h2>
             </div>
           </div>
           <div className="featuredItem">
-            <img src="" alt="" className="featuredImg3" />
+            <img className="featuredImg3" />
             <div className="featuredTitles">
               <h1>Victoria Island</h1>
               <h2> properties</h2>
