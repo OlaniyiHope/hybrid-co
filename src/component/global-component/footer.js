@@ -13,13 +13,21 @@ class Footer_v1 extends Component {
   }
 
   render() {
+    let publicUrl = process.env.PUBLIC_URL + "/";
+    let imgattr = "Footer logo";
+    const inlineStyle = {
+      backgroundImage: "url(" + publicUrl + footerdata.footerbg + ")",
+    };
+
     return (
       <footer className="footer-area">
         <div className="container">
           <div className="footer-top">
             <div className="row">
               <div className="col-sm-4">
-                <a className="footer-logo"></a>
+                <a className="footer-logo" href="#">
+                  <img src={publicUrl + footerdata.footerlogo} alt={imgattr} />
+                </a>
               </div>
               <div className="col-sm-8">
                 <div className="footer-social text-sm-right">
