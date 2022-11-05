@@ -19,7 +19,7 @@ class Footer_v1 extends Component {
           <div className="footer-top">
             <div className="row">
               <div className="col-sm-4">
-                <a className="footer-logo" href="#"></a>
+                <a className="footer-logo"></a>
               </div>
               <div className="col-sm-8">
                 <div className="footer-social text-sm-right">
