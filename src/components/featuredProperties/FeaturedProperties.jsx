@@ -5,7 +5,6 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const FeaturedProperties = () => {
   const { data, loading, error } = useFetch("/hotels?featured=true");
-
   const handleSearch = () => {};
 
   return (
