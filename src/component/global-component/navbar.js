@@ -72,12 +72,12 @@ const Navbar = () => {
                     ) : (
                       <div className="navItems">
                         <li className="navButton">
-                          <Link to="register" style={{ color: "#008000" }}>
+                          <Link to="/register" style={{ color: "#008000" }}>
                             Register
                           </Link>
                         </li>
                         <li className="navButton">
-                          <Link to="login" style={{ color: "#008000" }}>
+                          <Link to="/login" style={{ color: "#008000" }}>
                             {" "}
                             Login
                           </Link>{" "}
