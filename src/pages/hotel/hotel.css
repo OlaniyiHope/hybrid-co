@@ -1,11 +1,8 @@
 .hotelContainer {
-  
   align-items: center;
   display: flex;
   margin-top: 20px;
 }
-
-
 
 .bookNow {
   position: absolute;
@@ -52,11 +49,10 @@
 }
 
 .hotelImg {
-
   object-fit: cover;
   cursor: pointer;
-width: 600px;
- height: 400px;
+  width: 600px;
+  height: 400px;
 }
 
 .hotelDetails {
@@ -69,14 +65,14 @@ width: 600px;
 .hotelDetailsTexts {
   flex: 3;
 }
-.hey{
+.hey {
   background-color: #008009;
   color: #ebf3ff;
   border: none;
   font-weight: 700;
   border-radius: 5px;
 }
-.hot{
+.hot {
   font-size: 16px;
   margin-top: 20px;
   color: black;
@@ -111,11 +107,11 @@ width: 600px;
   cursor: pointer;
   border-radius: 5px;
 }
-.say{
+.say {
   font-weight: 700;
   color: black;
 }
-.slider{
+.slider {
   position: sticky;
   top: 0;
   left: 0;
@@ -127,7 +123,7 @@ width: 600px;
   align-items: center;
 }
 
-.sliderWrapper{
+.sliderWrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -135,12 +131,12 @@ width: 600px;
   align-items: center;
 }
 
-.sliderImg{
+.sliderImg {
   width: 80%;
   height: 80vh;
 }
 
-.close{
+.close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -149,7 +145,7 @@ width: 600px;
   cursor: pointer;
 }
 
-.arrow{
+.arrow {
   margin: 20px;
   font-size: 50px;
   color: lightgray;
@@ -157,46 +153,38 @@ width: 600px;
 }
 @media only screen and (max-width: 320px) {
   .hotelContainer {
-  
     align-items: center;
     display: block;
     margin-top: 20px;
   }
   .hotelImg {
-object-position: center;
+    object-position: center;
     object-fit: cover;
     cursor: pointer;
 
-  margin: auto;
-
+    margin: auto;
   }
-  .hot{
+  .hot {
     font-size: 16px;
     margin-top: 20px;
     color: black;
     width: 100%;
   }
-  
-  }
+}
 @media only screen and (max-width: 320px) {
   .hotelContainer {
-  
     align-items: center;
     display: block;
     margin-top: 20px;
   }
   .hotelImg {
-width: 90%;
+    max-width: 99%;
     cursor: pointer;
-
-  margin: auto;
-
   }
-  .hot{
+  .hot {
     font-size: 16px;
     margin-top: 20px;
     color: black;
     width: 100%;
   }
-  
-  }
+}
