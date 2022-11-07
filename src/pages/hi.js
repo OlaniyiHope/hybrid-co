@@ -88,7 +88,7 @@ const Hotel = () => {
                   <span>{data.address}</span>
                 </div>
                 <span className="hotelDistance">
-                  Excellent location – {data.distance}m from center
+                  Excellent Size – {data.distance}sqm
                 </span>
                 <div className="row ">
                   <div className="col-xl-9 col-lg-8">
@@ -202,4 +202,3 @@ const Hotel = () => {
 };
 
 export default Hotel;
-
