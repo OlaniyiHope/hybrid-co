@@ -1,13 +1,14 @@
 import "./list.css";
-import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useState, useContext } from "react";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
 import SearchItem from "../../components/searchItem/SearchItem";
 import useFetch from "../../hooks/useFetch";
 import Navbar from "../../component/global-component/navbar";
 import Footer from "../../component/global-component/footer";
-
+import { SearchContext } from "../../context/SearchContext";
+import { AuthContext } from "../../context/AuthContext";
 const List = () => {
   const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);
@@ -21,8 +22,23 @@ const List = () => {
     `/hotels?city=${destination}&min=${min || 0}&max=${max || 999}`
   );
 
-  const handleClick = () => {
-    reFetch();
+  const navigate = useNavigate();
+  const { user } = useContext(AuthContext);
+
+  const handleOption = (name, operation) => {
+    setOptions((prev) => {
+      return {
+        ...prev,
+        [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
+      };
+    });
+  };
+
+  const { dispatch } = useContext(SearchContext);
+
+  const handleSearch = () => {
+    dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
+    navigate("/hotels", { state: { destination, dates, options } });
   };
 
   return (
@@ -44,7 +60,7 @@ const List = () => {
               />
             </div>
 
-            <button onClick={handleClick}>Search</button>
+            <button onClick={handleSearch}>Search</button>
           </div>
           <div className="listResult">
             {loading ? (
