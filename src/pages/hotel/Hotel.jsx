@@ -80,7 +80,7 @@ const Hotel = () => {
                   <span className="say">{data?.name}</span>
                 </h3>
                 <button className="hey">
-                  For Sale - N{data?.cheapestPrice}{" "}
+                  For Sale - ₦{data?.cheapestPrice}{" "}
                 </button>
 
                 <div className="hotelAddress">

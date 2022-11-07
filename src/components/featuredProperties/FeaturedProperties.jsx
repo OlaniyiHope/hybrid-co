@@ -31,7 +31,7 @@ const FeaturedProperties = () => {
                     </span>
                     <br></br>
                     <span className="fpPrice">
-                      <bold>Price: N{item?.cheapestPrice}</bold>
+                      <bold>Price: ₦{item?.cheapestPrice}</bold>
                     </span>
                     <br></br>
                   </div>
