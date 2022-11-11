@@ -19,7 +19,7 @@ const List = () => {
   const [max, setMax] = useState(undefined);
 
   const { data, loading, error, reFetch } = useFetch(
-    `/hotels?city=${destination}&min=${min || 0}&max=${max || 999}`
+    `/properties?city=${destination}&min=${min || 0}&max=${max || 999}`
   );
 
   const navigate = useNavigate();
@@ -38,7 +38,7 @@ const List = () => {
 
   const handleSearch = () => {
     dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
-    navigate("/hotels", { state: { destination, dates, options } });
+    navigate("/properties", { state: { destination, dates, options } });
   };
 
   return (

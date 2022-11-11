@@ -1,8 +1,4 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Help from "./components/help/Help";
@@ -17,15 +13,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-      <Route path="/" element={< Home/>}/>
-      <Route path="/about" element={< About/>}/>
-      <Route path="/info" element={< Help/>}/>
-      <Route path="/property" element={< Property/>}/>
-      <Route path="/contact" element={< Contact/>}/>
-        <Route path="/hotels" element={<List/>}/>
-        <Route path="/hotels/:id" element={<Hotel/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/register" element={<Register/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/info" element={<Help />} />
+        <Route path="/property" element={<Property />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/properties" element={<List />} />
+        <Route path="/properties/:id" element={<Hotel />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

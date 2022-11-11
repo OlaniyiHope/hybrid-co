@@ -61,7 +61,7 @@ const Home = ({ type }) => {
 
   const handleSearch = () => {
     dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
-    navigate("/hotels", { state: { destination, dates, options } });
+    navigate("/properties", { state: { destination, dates, options } });
   };
 
   return (
