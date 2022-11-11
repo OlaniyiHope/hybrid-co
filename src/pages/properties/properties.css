@@ -1,4 +1,4 @@
-.hotelContainer {
+.propertiesContainer {
   align-items: center;
   display: flex;
   margin-top: 20px;
@@ -17,52 +17,52 @@
   cursor: pointer;
 }
 
-.hotelTitle {
+.propertiesTitle {
   font-size: 24px;
 }
 
-.hotelAddress {
+.propertiesAddress {
   font-size: 12px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.hotelDistance {
+.propertiesDistance {
   color: #008009;
   font-weight: 500;
 }
 
-.hotelPriceHighlight {
+.propertiesPriceHighlight {
   color: #008009;
   font-weight: 500;
 }
 
-.hotelImages {
+.propertiesImages {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.hotelImgWrapper {
+.propertiesImgWrapper {
   width: 33%;
 }
 
-.hotelImg {
+.propertiesImg {
   object-fit: cover;
   cursor: pointer;
   width: 600px;
   height: 400px;
 }
 
-.hotelDetails {
+.propertiesDetails {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
 }
 
-.hotelDetailsTexts {
+.propertiesDetailsTexts {
   flex: 3;
 }
 .hey {
@@ -79,7 +79,7 @@
   width: 70%;
 }
 
-.hotelDetailsPrice {
+.propertiesDetailsPrice {
   flex: 1;
   background-color: #ebf3ff;
   padding: 20px;
@@ -88,17 +88,17 @@
   gap: 20px;
 }
 
-.hotelDetailsPrice > h1 {
+.propertiesDetailsPrice > h1 {
   font-size: 18px;
   color: #555;
 }
-.hotelDetailsPrice > span {
+.propertiesDetailsPrice > span {
   font-size: 14px;
 }
-.hotelDetailsPrice > h2 {
+.propertiesDetailsPrice > h2 {
   font-weight: 300;
 }
-.hotelDetailsPrice > button {
+.propertiesDetailsPrice > button {
   border: none;
   padding: 10px 20px;
   background-color: #0071c2;
@@ -152,12 +152,12 @@
   cursor: pointer;
 }
 @media only screen and (max-width: 320px) {
-  .hotelContainer {
+  .propertiesContainer {
     align-items: center;
     display: block;
     margin-top: 20px;
   }
-  .hotelImg {
+  .propertiesImg {
     object-position: center;
     object-fit: cover;
     cursor: pointer;
@@ -172,12 +172,12 @@
   }
 }
 @media only screen and (max-width: 320px) {
-  .hotelContainer {
+  .propertiesContainer {
     align-items: center;
     display: block;
     margin-top: 20px;
   }
-  .hotelImg {
+  .propertiesImg {
     max-width: 99%;
     cursor: pointer;
   }
@@ -189,12 +189,12 @@
   }
 }
 @media only screen and (max-width: 560px) {
-  .hotelContainer {
+  .propertiesContainer {
     align-items: center;
     display: block;
     margin-top: 20px;
   }
-  .hotelImg {
+  .propertiesImg {
     max-width: 99%;
     cursor: pointer;
   }

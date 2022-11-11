@@ -4,7 +4,7 @@ import Contact from "./components/contact/Contact";
 import Help from "./components/help/Help";
 import Property from "./components/property/Property";
 import Home from "./pages/home/Home";
-import Hotel from "./pages/hotel/Hotel";
+import Properties from "./pages/properties/Properties";
 import List from "./pages/list/List";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
@@ -19,7 +19,7 @@ function App() {
         <Route path="/property" element={<Property />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/properties" element={<List />} />
-        <Route path="/properties/:id" element={<Hotel />} />
+        <Route path="/properties/:id" element={<Properties />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>

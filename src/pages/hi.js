@@ -1,4 +1,4 @@
-import "./hotel.css";
+import "./properties.css";
 import MailList from "../../components/mailList/MailList";
 import Footer from "../../components/footer/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,7 +16,7 @@ import { AuthContext } from "../../context/AuthContext";
 import Reserve from "../../components/reserve/Reserve";
 import Navbar from "../../component/global-component/navbar";
 
-const Hotel = () => {
+const Properties = () => {
   let publicUrl = process.env.PUBLIC_URL + "/";
   let imagealt = "image";
   const location = useLocation();
@@ -83,11 +83,11 @@ const Hotel = () => {
                   For Sale - N{data.cheapestPrice}{" "}
                 </button>
 
-                <div className="hotelAddress">
+                <div className="propertiesAddress">
                   <FontAwesomeIcon icon={faLocationDot} />
                   <span>{data.address}</span>
                 </div>
-                <span className="hotelDistance">
+                <span className="propertiesDistance">
                   Excellent Size – {data.distance}sqm
                 </span>
                 <div className="row ">
@@ -95,20 +95,20 @@ const Hotel = () => {
                     <div className="property-details-slider">
                       <div className="item">
                         <div className="thumb">
-                          <div className="hotelImages">
+                          <div className="propertiesImages">
                             {data.photos?.map((photo, i) => (
-                              <div className="hotelImgWrapper" key={i}>
+                              <div className="propertiesImgWrapper" key={i}>
                                 <img
                                   onClick={() => handleOpen(i)}
                                   src={photo}
                                   alt=""
-                                  className="hotelImg"
+                                  className="propertiesImg"
                                 />
                               </div>
                             ))}
                           </div>
-                          <div className="hotelDetails">
-                            <div className="hotelDetailsTexts">
+                          <div className="propertiesDetails">
+                            <div className="propertiesDetailsTexts">
                               <h1
                                 style={{
                                   fontSize: 20,
@@ -196,9 +196,9 @@ const Hotel = () => {
           <Footer />
         </>
       )}
-      {openModal && <Reserve setOpen={setOpenModal} hotelId={id} />}
+      {openModal && <Reserve setOpen={setOpenModal} propertiesId={id} />}
     </div>
   );
 };
 
-export default Hotel;
+export default Properties;
