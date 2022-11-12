@@ -85,7 +85,7 @@ const Properties = () => {
 
                 <div className="propertiesAddress">
                   <FontAwesomeIcon icon={faLocationDot} />
-                  <span>{data?.address}</span>
+                  <span>{data?.city}</span>
                 </div>
                 <span className="propertiesDistance">
                   Excellent property size – {data?.distance}sqm
