@@ -151,7 +151,10 @@ const Properties = () => {
                           <div className="media">
                             <div className="media-body">
                               <p>Address</p>
-                              <span>Long Island, NY 11355, USA</span>
+                              <span>
+                                i202 Ogba Multipurpose Hall adjacent Sunday
+                                market, along wempco, Ogba, Ikeja lagos
+                              </span>
                             </div>
                           </div>
                           <div className="media">
@@ -160,7 +163,7 @@ const Properties = () => {
                             </div>
                             <div className="media-body">
                               <p>Phone</p>
-                              <span>+00 111 222 333</span>
+                              <span>08146437416</span>
                             </div>
                           </div>
                           <div className="media mb-0">
@@ -169,7 +172,7 @@ const Properties = () => {
                             </div>
                             <div className="media-body">
                               <p>Email</p>
-                              <span>info@example.com</span>
+                              <span>hybridhomesandproperties@gmail.com</span>
                             </div>
                           </div>
                         </div>
