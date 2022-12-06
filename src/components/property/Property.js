@@ -47,9 +47,7 @@ const Property = () => {
                     >
                       <div className="single-feature">
                         <div className="thumb">
-                          <Link to={`/properties/${item?._id}`}>
-                            <img src={item?.photos[0]} alt="img" />
-                          </Link>
+                          <img src={item?.photos[0]} alt="img" />
                         </div>
                         <div className="details">
                           <p className="author">
