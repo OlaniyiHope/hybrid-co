@@ -11,10 +11,10 @@
 
 .fpItem {
   position: relative;
-  color: white;
+
   border-radius: 10px;
   overflow: hidden;
-  height: 250px;
+
   margin-bottom: 30px;
 }
 
