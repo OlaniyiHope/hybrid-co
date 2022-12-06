@@ -16,7 +16,7 @@
   overflow: hidden;
   height: 250px;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .fpImg {
@@ -27,12 +27,15 @@
 }
 
 .fpTitle {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  font-weight: 900;
+  background: #f6f6f6;
+  padding: 20px 20px;
+  position: relative;
 }
-
+.fpItem .fpTitle .fpName {
+  padding-left: 1px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
 .fpRating > button {
   background-color: #003580;
   color: white;
