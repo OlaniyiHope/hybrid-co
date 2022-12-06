@@ -19,14 +19,13 @@
 }
 
 .fpImg {
-  background-color: #003580;
-  opacity: 0.77;
+  background-color: #f6f6f6;
+  height: 250px;
   width: 100%;
-  filter: brightness(50%);
 }
 .fpName {
   font-size: 16px;
-  background-color: var(--main-color-one);
+  color: var(--main-color-one);
 }
 .fpCity {
   font-size: 14px;
