@@ -25,19 +25,19 @@
   filter: brightness(50%);
 }
 .fpName {
-  font-size: 12px;
-  color: black;
+  font-size: 16px;
+  background: var(--main-color-one);
 }
 .fpCity {
-  font-size: 12px;
+  font-size: 14px;
   color: black;
 }
 .fpPrice {
-  font-size: 12px;
+  font-size: 16px;
   color: black;
 }
 .fpTitle {
-  background: #f6f6f6;
+  background-color: #f6f6f6;
   padding: 20px 20px;
   position: relative;
 }
