@@ -3431,7 +3431,7 @@ ul {
   margin-bottom: 30px;
 }
 .single-feature .thumb {
-  position: relative;
+  position: fixed;
 }
 .single-feature .thumb a {
   position: absolute;
@@ -3450,6 +3450,8 @@ ul {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  height: 100px;
+  width: 100%;
   transition: all 0.5s ease;
 }
 .single-feature .details {
