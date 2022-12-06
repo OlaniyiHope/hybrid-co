@@ -47,11 +47,7 @@ const Property = () => {
                     >
                       <div className="single-feature">
                         <div className="thumb">
-                          <img
-                            src={item?.photos[0]}
-                            alt="img"
-                            className="thumb"
-                          />
+                          <img src={item?.photos[0]} alt="img" />
                         </div>
                         <div className="details">
                           <p className="author">
