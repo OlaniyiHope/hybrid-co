@@ -12,6 +12,7 @@ const Property = () => {
       <div className="property-area pd-top-100">
         <Navbar />
         <Page_header headertitle="Property" />
+        <br />
         <FeaturedProperties />
         <Footer />
       </div>
