@@ -1,7 +1,5 @@
 import Navbar from "../../component/global-component/navbar";
 import Page_header from "../../component/global-component/page-header";
-import Featured from "../../components/featured/Featured";
-import FeaturedProperties from "../../components/featuredProperties/FeaturedProperties";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import MailList from "../../components/mailList/MailList";
@@ -28,6 +26,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import WhyChooseUs from "../../component/section-component/why-choose-us";
+import Featureds from "../../component/section-component/featured-properties";
+import PropertiesByCities from "../../component/section-component/properties-by-cities";
+
 const Home = ({ type }) => {
   const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
@@ -84,16 +85,19 @@ const Home = ({ type }) => {
           </button>
         </div>
       </div>
+
       <WhyChooseUs />
       <MailList />
-      <div className="homeContainer">
-        <Featured />
 
-        <h6 style={{ textAlign: "center" }} className="ok">
-          Latest Properties
-        </h6>
-        <FeaturedProperties />
+      <h6 style={{ textAlign: "center" }} className="ok">
+        Latest Properties
+      </h6>
+      <Featureds />
+      <div className="homeContainer">
+        <PropertiesByCities />
+
         <MailList2 />
+
         <Footer />
       </div>
     </div>

@@ -24,10 +24,8 @@ const FeaturedProperties = () => {
                     <span className="fpName">{item?.name}</span>
                     <br></br>
                     <span className="fpCity">
-                      <bold>
-                        <FontAwesomeIcon icon={faLocationDot} />
-                        {item?.city}
-                      </bold>
+                      <FontAwesomeIcon icon={faLocationDot} />
+                      {item?.city}
                     </span>
                     <br></br>
                     <span className="fpPrice">

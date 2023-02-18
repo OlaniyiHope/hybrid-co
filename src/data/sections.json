@@ -450,77 +450,53 @@
     ]
   },
   "propertiesbycities": {
-    "title": "Properties by Cities",
+    "title": "Beautiful Places in Lagos",
     "items": [
       {
-        "class": "col-lg-2 col-sm-6",
-        "sectionclass": "sc-one",
-        "image": "assets/img/city/1.png",
-        "city": "New York",
-        "url": "/properties-by-city",
-        "content": "12 Properties"
-      },
-      {
-        "class": "col-lg-2 col-sm-6",
-        "sectionclass": "sc-two",
-        "image": "assets/img/city/2.png",
-        "city": "Las Vegas",
-        "url": "/properties-by-city",
-        "content": "12 Properties"
-      },
-      {
-        "class": "col-lg-5 col-sm-6",
-        "sectionclass": "",
-        "image": "assets/img/city/3.png",
-        "city": "San Srancisco",
-        "url": "/properties-by-city",
-        "content": "12 Properties"
-      },
-      {
         "class": "col-lg-3 col-sm-6",
-        "sectionclass": "sc-three",
-        "image": "assets/img/city/4.png",
-        "city": "United State",
-        "url": "/properties-by-city",
-        "content": "12 Properties"
-      },
-      {
-        "class": "col-lg-4 col-sm-6",
         "sectionclass": "",
-        "image": "assets/img/city/2.png",
-        "city": "Vilma Jarvi",
-        "url": "/properties-by-city",
-        "content": "12 Properties"
-      },
-      {
-        "class": "col-lg-4 col-sm-6",
-        "sectionclass": "",
-        "image": "assets/img/city/6.png",
-        "city": "United State",
-        "url": "/properties-by-city",
-        "content": "12 Properties"
+        "image": "assets/img/ggg.jpg",
+        "city": "Lekki",
+        "url": "/",
+        "content": "Properties for sale"
       },
       {
         "class": "col-lg-3 col-sm-6",
         "sectionclass": "",
-        "image": "assets/img/city/7.png",
-        "city": "New York",
-        "url": "/properties-by-city",
-        "content": "12 Properties"
+        "image": "assets/img/gg.jpg",
+        "city": "Ikoyi",
+        "url": "/",
+        "content": "Properties for sale"
+      },
+      {
+        "class": "col-lg-3 col-sm-6",
+        "sectionclass": "",
+        "image": "assets/img/q3.jpg",
+        "city": "Ajah",
+        "url": "/",
+        "content": "Properties for sale"
+      },
+      {
+        "class": "col-lg-3 col-sm-6",
+        "sectionclass": "",
+        "image": "assets/img/q3.jpg",
+        "city": "Victoria Island",
+        "url": "/",
+        "content": "Properties for sale"
       }
     ],
     "intro": [
       {
-        "title": "Looking for the new home?",
+        "title": "Looking for a place to stay?",
         "url": "",
-        "content": "10 new offers every day. 350 offers on site, trusted by a community of thousands of users.",
+        "content": "We have beautiful shortlet and houses for sale for you. Contact us today",
         "icon": "assets/img/icons/9.png",
         "class": "single-intro-media-active"
       },
       {
         "title": "Want to sell your home?",
         "url": "",
-        "content": "10 new offers every day. 350 offers on site, trusted by a community of thousands of users.",
+        "content": "Contact us and trust us with your properties",
         "icon": "assets/img/icons/10.png"
       }
     ]
