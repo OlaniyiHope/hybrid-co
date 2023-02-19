@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className="logo readeal-top">
               <Link to="/">
                 <img
-                  src="../hy.png"
+                  src=""
                   style={{ width: "130px", height: "60px" }}
                   alt="logo"
                 />

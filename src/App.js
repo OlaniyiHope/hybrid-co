@@ -8,6 +8,7 @@ import Properties from "./pages/properties/Properties";
 import List from "./pages/list/List";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
+import Featureds from "./component/section-component/featured-properties";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/info" element={<Help />} />
         <Route path="/property" element={<Property />} />
+
         <Route path="/contact" element={<Contact />} />
         <Route path="/properties" element={<List />} />
         <Route path="/properties/:id" element={<Properties />} />

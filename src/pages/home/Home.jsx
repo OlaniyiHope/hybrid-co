@@ -68,7 +68,8 @@ const Home = ({ type }) => {
   return (
     <div style={{ backgroundColor: "#F6F7FB" }}>
       <Navbar />
-      <Page_header headertitle="home" className="ona" />
+      <div></div>
+      <Page_header headertitle="home" />
       <div className="headerSearch">
         <div className="headerSearchItem">
           <input

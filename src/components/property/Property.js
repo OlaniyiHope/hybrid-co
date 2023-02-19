@@ -5,7 +5,7 @@ import Footer from "../../component/global-component/footer";
 import Navbar from "../../component/global-component/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import FeaturedProperties from "../featuredProperties/FeaturedProperties";
+import Featureds from "../../component/section-component/featured-properties";
 const Property = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const Property = () => {
         <Navbar />
         <Page_header headertitle="Property" />
         <br />
-        <FeaturedProperties />
+        <Featureds />
         <Footer />
       </div>
     </>
