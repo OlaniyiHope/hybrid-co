@@ -1180,10 +1180,50 @@ ul {
     ## Breadcumb 
 ------------------------------------------*/
 .breadcrumb-area {
-  width: 100%;
-  background-image: url("../img/q1.jpg");
+  padding: 186px 0 112px;
   background-size: cover;
   position: relative;
+  background-image: url("../img/q1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.breadcrumb-area:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, rgba(0, 0, 0, 0.5)),
+    to(rgba(0, 0, 100, 0))
+  );
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 100, 0)
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 100, 0)
+  );
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 100, 0)
+  );
+  height: 65%;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .breadcrumb-area .breadcrumb-inner {
@@ -2345,6 +2385,14 @@ ul {
 }
 
 /******* banner tab style *****/
+.banner-area {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner-area .banner-search-wrap {
+  margin-top: 24px;
+}
 
 .rld-banner-tab {
   border-bottom: 0;

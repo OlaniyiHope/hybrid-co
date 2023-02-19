@@ -9,10 +9,9 @@ class Page_header extends Component {
 
     return (
       <>
-        <div className="breadcrumb-area ">
-          <div className="container">
+        <div className="  breadcrumb-area">
+          <div>
             <div className="row">
-              <div></div>
               <div className="breadcrumb-inner">
                 <h1
                   className="page-title"
