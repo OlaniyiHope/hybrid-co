@@ -1180,7 +1180,6 @@ ul {
     ## Breadcumb 
 ------------------------------------------*/
 .breadcrumb-area {
-  padding: 186px 0 112px;
   width: 100%;
   background-image: url("../img/q1.jpg");
   background-size: cover;
@@ -2346,14 +2345,6 @@ ul {
 }
 
 /******* banner tab style *****/
-.banner-area {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.banner-area .banner-search-wrap {
-  margin-top: 24px;
-}
 
 .rld-banner-tab {
   border-bottom: 0;

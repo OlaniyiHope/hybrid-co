@@ -9,7 +9,7 @@ class Page_header extends Component {
 
     return (
       <>
-        <div className="breadcrumb-area jarallax">
+        <div className="breadcrumb-area ">
           <div className="container">
             <div className="row">
               <div></div>
