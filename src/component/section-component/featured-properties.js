@@ -33,12 +33,13 @@ const Featureds = () => {
                     />
                   </Link>
                   <div className="details">
-                    <p className="author">
-                      <FontAwesomeIcon icon={faLocationDot} /> {item?.city}
-                    </p>
                     <h6 className="title readeal-top">
                       <Link to="">{item?.name}</Link>
                     </h6>
+                    <p className="author">
+                      <FontAwesomeIcon icon={faLocationDot} /> {item?.city}
+                    </p>
+
                     <h6 className="price">{item?.cheapestPrice}</h6>
 
                     <ul className="info-list"></ul>
