@@ -455,7 +455,7 @@
       {
         "class": "col-lg-3 col-sm-6",
         "sectionclass": "",
-        "image": "assets/img/ggg.jpg",
+        "image": "assets/img//l1.jpg",
         "city": "Lekki",
         "url": "/",
         "content": "Properties for sale"
@@ -463,7 +463,7 @@
       {
         "class": "col-lg-3 col-sm-6",
         "sectionclass": "",
-        "image": "assets/img/gg.jpg",
+        "image": "assets/img/l2.jpg",
         "city": "Ikoyi",
         "url": "/",
         "content": "Properties for sale"
@@ -471,7 +471,7 @@
       {
         "class": "col-lg-3 col-sm-6",
         "sectionclass": "",
-        "image": "assets/img/q3.jpg",
+        "image": "assets/img/l3.jpg",
         "city": "Ajah",
         "url": "/",
         "content": "Properties for sale"
