@@ -73,6 +73,32 @@ const Properties = () => {
         "loading"
       ) : (
         <>
+          {open && (
+            <div className="slider">
+              <FontAwesomeIcon
+                icon={faCircleXmark}
+                className="close"
+                onClick={() => setOpen(false)}
+              />
+              <FontAwesomeIcon
+                icon={faCircleArrowLeft}
+                className="arrow"
+                onClick={() => handleMove("l")}
+              />
+              <div className="sliderWrapper">
+                <img
+                  src={data.photos[slideNumber]}
+                  alt=""
+                  className="sliderImg"
+                />
+              </div>
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                className="arrow"
+                onClick={() => handleMove("r")}
+              />
+            </div>
+          )}
           <div className="property-details-area" style={{ paddingTop: "0" }}>
             <div className="bg-gray pd-top-100 pd-bottom-90">
               <div className="container">
@@ -92,13 +118,16 @@ const Properties = () => {
                 </span>
                 <div className="row ">
                   <div className="col-xl-9 col-lg-8">
-                    {data && (
-                      <img
-                        src={data?.photos?.[0]}
-                        alt=""
-                        className="propertiesImg"
-                      />
-                    )}
+                    {data.photos?.map((photo, i) => (
+                      <div key={i}>
+                        <img
+                          onClick={() => handleOpen(i)}
+                          src={photo}
+                          alt=""
+                          className="propertiesImg"
+                        />
+                      </div>
+                    ))}
 
                     <div className="propertiesDetails">
                       <div className="propertiesDetailsTexts">
