@@ -246,24 +246,21 @@
     "title": "Why Choose Us",
     "items": [
       {
-        "icon": "assets/img/icons/11.png",
-        "title": "Sell, Rent Property Free",
+        "title": "Location",
         "url": "#",
-        "content": "Our experts answer all queries with their unmatched knowledge at every step of home buying.",
+        "content": "Hybrid properties are located in excellent locations which guarantees return on investment.",
         "class": ""
       },
       {
-        "icon": "assets/img/icons/12.png",
-        "title": "In-depth Info on Investment Hotspots",
+        "title": "Integrity",
         "url": "#",
-        "content": "Our experts answer all queries with their unmatched knowledge at every step of home buying.",
+        "content": "We have been in business for several years and our clients trusts us to deliver completely",
         "class": "offset-xl-1"
       },
       {
-        "icon": "assets/img/icons/13.png",
-        "title": "Pool of Best Property Options",
+        "title": "Price",
         "url": "#",
-        "content": "Our experts answer all queries with their unmatched knowledge at every step of home buying.",
+        "content": "Our homes are very affordable, we have properties for both the high & middle class earners with easy payment plans, dont go too far, contact us",
         "class": "offset-xl-1"
       }
     ]
