@@ -6,9 +6,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "react-slideshow-image/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useFetch from "../../hooks/useFetch";
-
 const Featureds = () => {
-  let reactSwipeEl;
   const { data, loading, error } = useFetch("/properties?featured=true");
   const spanStyle = {
     padding: "20px",
@@ -37,14 +35,16 @@ const Featureds = () => {
                 <div className="single-feature">
                   <div className="thumb">
                     <Link to={`/properties/${item?._id}`}>
-                      <img
-                        src={item?.photos[0]}
-                        alt=""
-                        style={{ height: "200px", width: "100%" }}
-                      />
+                      <span style={spanStyle}></span>
                     </Link>
                   </div>
-
+                  <Link to={`/properties/${item?._id}`}>
+                    <img
+                      src={item?.photos[0]}
+                      alt=""
+                      style={{ height: "200px", width: "100%" }}
+                    />
+                  </Link>
                   <div className="details">
                     <h6 className="title readeal-top">
                       <Link to="">{item?.name}</Link>
