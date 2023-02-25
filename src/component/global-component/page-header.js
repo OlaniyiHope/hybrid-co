@@ -15,13 +15,20 @@ class Page_header extends Component {
               <div className="breadcrumb-inner">
                 <h1
                   className="page-title"
-                  style={{ fontWeight: "700", color: "white" }}
+                  style={{
+                    fontWeight: "700",
+                    color: "white",
+                    paddingLeft: "20px",
+                  }}
                 >
                   {HeaderTitle}
                 </h1>
                 <ul className="page-list">
                   <li>
-                    <Link to="/" style={{ fontWeight: "700" }}>
+                    <Link
+                      to="/"
+                      style={{ fontWeight: "700", paddingLeft: "20px" }}
+                    >
                       Home
                     </Link>
                   </li>
