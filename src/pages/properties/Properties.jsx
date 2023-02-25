@@ -15,6 +15,9 @@ import { SearchContext } from "../../context/SearchContext";
 import { AuthContext } from "../../context/AuthContext";
 import Reserve from "../../components/reserve/Reserve";
 import Navbar from "../../component/global-component/navbar";
+import ReactSwipe from "react-swipe";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 const Properties = () => {
   let publicUrl = process.env.PUBLIC_URL + "/";
@@ -118,17 +121,18 @@ const Properties = () => {
                 </span>
                 <div className="row ">
                   <div className="col-xl-9 col-lg-8">
-                    {data.photos?.map((photo, i) => (
-                      <div key={i}>
-                        <img
-                          onClick={() => handleOpen(i)}
-                          src={photo}
-                          alt=""
-                          className="propertiesImg"
-                        />
-                      </div>
-                    ))}
-
+                    <Slide>
+                      {data.photos?.map((photo, i) => (
+                        <div key={i}>
+                          <img
+                            onClick={() => handleOpen(i)}
+                            src={photo}
+                            alt=""
+                            className="propertiesImg"
+                          />
+                        </div>
+                      ))}
+                    </Slide>
                     <div className="propertiesDetails">
                       <div className="propertiesDetailsTexts">
                         <h1
