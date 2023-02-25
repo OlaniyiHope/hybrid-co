@@ -53,7 +53,7 @@ const Featureds = () => {
                       <FontAwesomeIcon icon={faLocationDot} /> {item?.city}
                     </p>
 
-                    <h6 className="price">{item?.cheapestPrice}</h6>
+                    <h6 className="price">₦{item?.cheapestPrice}</h6>
 
                     <ul className="info-list"></ul>
                     <ul className="contact-list">
