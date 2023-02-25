@@ -217,7 +217,6 @@ const Properties = () => {
             </div>
           </div>
 
-          <MailList />
           <Footer />
         </>
       )}
