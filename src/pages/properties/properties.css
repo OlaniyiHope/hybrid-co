@@ -51,8 +51,8 @@
 .propertiesImg {
   object-fit: cover;
   cursor: pointer;
-  width: 600px;
-  height: 400px;
+  width: 800px;
+  height: 430px;
 }
 
 .propertiesDetails {
