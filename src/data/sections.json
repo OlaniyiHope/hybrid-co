@@ -958,22 +958,22 @@
     "items": [
       {
         "number": "01",
-        "title": "Our Mission",
+        "title": "Location",
         "url": "#",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae venenatis mi"
+        "content": "Hybrid properties are located in excellent locations which guarantees return on investment."
       },
       {
         "number": "02",
-        "title": "Our Vision",
+        "title": "Integrity",
         "url": "#",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae venenatis mi",
+        "content": "We have been in business for several years and our clients trusts us to deliver completely",
         "class": "offset-xl-1"
       },
       {
         "number": "03",
-        "title": "Our Philosohy",
+        "title": "Price",
         "url": "#",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae venenatis mi",
+        "content": "Our homes are very affordable, we have properties for both the high & middle class earners with easy payment plans, dont go too far, contact us",
         "class": "offset-xl-1"
       }
     ]
