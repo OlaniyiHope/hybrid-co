@@ -15,7 +15,7 @@ const Contact = () => {
               <div className="contact-page-map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126827.54056982225!2d3.2513516036333256!3d6.6020257923176215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sOgba%20Multipurpose%20Hall%20adjacent!5e0!3m2!1sen!2sng!4v1677383873864!5m2!1sen!2sng"
-                  style={{ width: "600", height: "450", border: 0 }}
+                  style={{ width: "100%", height: "450", border: 0 }}
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
