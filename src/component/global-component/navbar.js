@@ -34,11 +34,13 @@ const Navbar = () => {
             </div>
             <div className="logo readeal-top">
               <a to="/">
-                <img
-                  src={logo}
-                  style={{ width: "100px", height: "50px" }}
-                  alt="logo"
-                />
+                <Link to="/">
+                  <img
+                    src={logo}
+                    style={{ width: "100px", height: "50px" }}
+                    alt="logo"
+                  />
+                </Link>
               </a>
             </div>
             <div className="nav-right-part nav-right-part-mobile"></div>
