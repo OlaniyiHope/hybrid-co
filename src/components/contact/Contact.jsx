@@ -14,11 +14,14 @@ const Contact = () => {
             <div className="col-lg-8">
               <div className="contact-page-map">
                 <iframe
-                  className="w-100"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60021.82409444856!2d-122.40118071595978!3d37.7546723469594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1577786376747!5m2!1sen!2sbd"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                />
+                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126827.54056982225!2d3.2513516036333256!3d6.6020257923176215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sOgba%20Multipurpose%20Hall%20adjacent!5e0!3m2!1sen!2sng!4v1677383873864!5m2!1sen!2sng"
+                  width="600"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
             <div className="col-lg-4">
