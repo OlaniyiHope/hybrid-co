@@ -28,6 +28,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import WhyChooseUs from "../../component/section-component/why-choose-us";
 import Featureds from "../../component/section-component/featured-properties";
 import PropertiesByCities from "../../component/section-component/properties-by-cities";
+import { Helmet } from "react-helmet-async";
 
 const Home = ({ type }) => {
   const [destination, setDestination] = useState("");
@@ -66,42 +67,53 @@ const Home = ({ type }) => {
   };
 
   return (
-    <div style={{ backgroundColor: "#F6F7FB" }}>
-      <Navbar />
-      <div></div>
-      <Page_header headertitle="home" />
-      <div className="headerSearch">
-        <div className="headerSearchItem">
-          <input
-            type="text"
-            placeholder="Property Location?"
-            className="headerSearchInput"
-            onChange={(e) => setDestination(e.target.value)}
-          />
+    <>
+      <Helmet>
+        <title>Hybrid Home and Properties</title>
+        <meta
+          name="description"
+          content="Hybrid Homes and Properties"
+          data-rh="true"
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
+      <div style={{ backgroundColor: "#F6F7FB" }}>
+        <Navbar />
+        <div></div>
+        <Page_header headertitle="home" />
+        <div className="headerSearch">
+          <div className="headerSearchItem">
+            <input
+              type="text"
+              placeholder="Property Location?"
+              className="headerSearchInput"
+              onChange={(e) => setDestination(e.target.value)}
+            />
+          </div>
+
+          <div className="headerSearchItem">
+            <button className="headerBtn" onClick={handleSearch}>
+              Search
+            </button>
+          </div>
         </div>
 
-        <div className="headerSearchItem">
-          <button className="headerBtn" onClick={handleSearch}>
-            Search
-          </button>
+        <WhyChooseUs />
+        <MailList />
+
+        <h6 style={{ textAlign: "center" }} className="ok">
+          Latest Properties
+        </h6>
+        <Featureds />
+        <div className="homeContainer">
+          <PropertiesByCities />
+
+          <MailList2 />
+
+          <Footer />
         </div>
       </div>
-
-      <WhyChooseUs />
-      <MailList />
-
-      <h6 style={{ textAlign: "center" }} className="ok">
-        Latest Properties
-      </h6>
-      <Featureds />
-      <div className="homeContainer">
-        <PropertiesByCities />
-
-        <MailList2 />
-
-        <Footer />
-      </div>
-    </div>
+    </>
   );
 };
 
