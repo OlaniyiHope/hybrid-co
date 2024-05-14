@@ -8,7 +8,7 @@ import {
   faCircleXmark,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import useFetch from "../../hooks/useFetch";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { SearchContext } from "../../context/SearchContext";
@@ -19,17 +19,53 @@ import ReactSwipe from "react-swipe";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
+import { useParams } from "react-router-dom";
+
 const Properties = () => {
   let publicUrl = process.env.PUBLIC_URL + "/";
   let imagealt = "image";
   const location = useLocation();
-  const id = location.pathname.split("/")[2];
+  // const id = location.pathname.split("/")[2];
+  // const slug = location.pathname.split("/")[2];
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [slideNumber, setSlideNumber] = useState(0);
   const [open, setOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
-  const { data, loading, error } = useFetch(`/properties/find/${id}`);
+  // const { name } = useParams();
 
+  // const { data, loading, error } = useFetch(
+  //   `/properties/find-by-name/${encodeURIComponent(name)}`
+  // );
+  const { name } = useParams();
+
+  // Decode the property name retrieved from URL params
+  const decodedName = decodeURIComponent(name);
+
+  // Fetch property details using the decoded property name
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `https://hybrid-api-45c4ab65a127.herokuapp.com/api/properties/find-by-name/${encodeURIComponent(
+            name.replace(/\-/g, " ")
+          )}`
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch property data");
+        }
+        const data = await response.json();
+        setData(data);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [name]);
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -202,7 +238,6 @@ const Properties = () => {
           <Footer />
         </>
       )}
-      {openModal && <Reserve setOpen={setOpenModal} propertiesId={id} />}
     </div>
   );
 };

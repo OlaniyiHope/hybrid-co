@@ -21,7 +21,7 @@ function App() {
 
         <Route path="/contact" element={<Contact />} />
         <Route path="/properties" element={<List />} />
-        <Route path="/properties/:id" element={<Properties />} />
+        <Route path="/properties/:name" element={<Properties />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>

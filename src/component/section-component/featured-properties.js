@@ -31,14 +31,23 @@ const Featureds = () => {
         <div className="row">
           {data &&
             data.map((item) => (
-              <div key={item?._id} className="col-lg-3 col-sm-6">
+              <div key={item?.name} className="col-lg-3 col-sm-6">
                 <div className="single-feature">
                   <div className="thumb">
-                    <Link to={`/properties/${item?._id}`}>
+                    <Link
+                      to={`/properties/${encodeURIComponent(
+                        item?.name.replace(/\s/g, "-")
+                      )}`}
+                    >
                       <span style={spanStyle}></span>
                     </Link>
                   </div>
-                  <Link to={`/properties/${item?._id}`}>
+
+                  <Link
+                    to={`/properties/${encodeURIComponent(
+                      item?.name.replace(/\s/g, "-")
+                    )}`}
+                  >
                     <img
                       src={item?.photos[0]}
                       alt=""
@@ -47,7 +56,13 @@ const Featureds = () => {
                   </Link>
                   <div className="details">
                     <h6 className="title readeal-top">
-                      <Link to={`/properties/${item?._id}`}>{item?.name}</Link>
+                      <Link
+                        to={`/properties/${encodeURIComponent(
+                          item?.name.replace(/\s/g, "-")
+                        )}`}
+                      >
+                        {item?.name}
+                      </Link>
                     </h6>
                     <p className="author">
                       <FontAwesomeIcon icon={faLocationDot} /> {item?.city}
@@ -62,7 +77,9 @@ const Featureds = () => {
                       <li className="readeal-top">
                         <Link
                           className="btn btn-yellow"
-                          to={`/properties/${item?._id}`}
+                          to={`/properties/${encodeURIComponent(
+                            item?.name.replace(/\s/g, "-")
+                          )}`}
                         >
                           View Details
                         </Link>
