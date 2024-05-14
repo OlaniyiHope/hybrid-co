@@ -23,7 +23,7 @@ const Login = () => {
     dispatch({ type: "LOGIN_START" });
     try {
       const res = await axios.post(
-        "https://hybridapi-ef4d9b751aab.herokuapp.com/api/auth/login",
+        "https://hybrid-api-45c4ab65a127.herokuapp.com/api/auth/login",
         credentials
       );
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });

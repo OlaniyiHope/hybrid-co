@@ -31,7 +31,7 @@ const Register = ({ inputs, title }) => {
       };
 
       await axios.post(
-        "https://hybridapi-b5a8919346f7.herokuapp.com/api/auth/register",
+        "https://hybrid-api-45c4ab65a127.herokuapp.com/api/auth/register",
         newUser
       );
       navigate("/login");
