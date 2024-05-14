@@ -118,7 +118,7 @@ const Properties = () => {
                               >
                                 Description
                               </h1>
-                              <h1 className="hot">{data.detail}</h1>
+                              <h1 className="hot">{data.desc}</h1>
                               <h1
                                 style={{
                                   fontSize: 20,
@@ -129,7 +129,11 @@ const Properties = () => {
                               >
                                 Details
                               </h1>
-                              <p className="hot">{data.desc}</p>
+                              <ul>
+                                {data.detail.split(",").map((detail, index) => (
+                                  <li key={index}>{detail.trim()}</li>
+                                ))}
+                              </ul>
                             </div>
                           </div>
                         </div>
