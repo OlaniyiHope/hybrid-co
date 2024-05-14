@@ -47,7 +47,7 @@ const Featureds = () => {
                   </Link>
                   <div className="details">
                     <h6 className="title readeal-top">
-                      <Link to="">{item?.name}</Link>
+                      <Link to={`/properties/${item?._id}`}>{item?.name}</Link>
                     </h6>
                     <p className="author">
                       <FontAwesomeIcon icon={faLocationDot} /> {item?.city}
